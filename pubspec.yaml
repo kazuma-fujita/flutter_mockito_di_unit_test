@@ -33,6 +33,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  mock_web_server: ^5.0.0-nullsafety.1
   pedantic_mono:
 
 # For information on the generic Dart part of this file, see the
