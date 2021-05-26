@@ -22,10 +22,10 @@ class RepositoryImpl implements Repository {
   Future<List<Entity>> fitchList() async {
     final responseBody = await apiClient.get(endPoint);
     try {
-      final decodedJson = json.decode(responseBody) as List<Object>;
+      final decodedJson = json.decode(responseBody) as List<dynamic>;
       return decodedJson
           .map((dynamic itemJson) =>
-              Entity.fromJson(itemJson as Map<String, Object>))
+              Entity.fromJson(itemJson as Map<String, dynamic>))
           .toList();
     } on Exception catch (error) {
       throw Exception('Json decode error: $error');

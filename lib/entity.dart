@@ -12,5 +12,5 @@ class Entity with _$Entity {
     String? description,
   }) = _Entity;
 
-  factory Entity.fromJson(Map<String, Object> json) => _$EntityFromJson(json);
+  factory Entity.fromJson(Map<String, dynamic> json) => _$EntityFromJson(json);
 }
