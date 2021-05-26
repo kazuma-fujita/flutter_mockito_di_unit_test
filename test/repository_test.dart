@@ -4,7 +4,6 @@ import 'package:flutter_mockito_di_unit_test/api_client.dart';
 import 'package:flutter_mockito_di_unit_test/repository.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
-
 import 'fixture.dart';
 import 'repository_test.mocks.dart';
 
@@ -45,7 +44,9 @@ void main() {
             .having((list) => list[1].id, 'id', 2)
             .having((list) => list[1].title, 'title', 'Second task')
             .having((list) => list[2].id, 'id', 3)
-            .having((list) => list[2].title, 'title', 'Third task'),
+            .having((list) => list[2].title, 'title', 'Third task')
+            .having((list) => list[2].description, 'description',
+                'Description of tasks for testing.'),
       );
     });
 

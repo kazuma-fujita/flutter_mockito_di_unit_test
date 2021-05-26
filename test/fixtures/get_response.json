@@ -9,6 +9,7 @@
   },
   {
     "id": 3,
-    "title": "Third task"
+    "title": "Third task",
+    "description": "Description of tasks for testing."
   }
 ]
