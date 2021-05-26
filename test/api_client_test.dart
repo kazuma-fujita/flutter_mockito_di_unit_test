@@ -37,7 +37,7 @@ void main() {
       _server.enqueue(httpCode: 204);
       final responseBody = await _apiClient.post(
         '/endpoint',
-        '{ "title" : "Testing for post" }',
+        body: '{ "title" : "Testing for post" }',
       );
       expect(responseBody, isEmpty);
       final request = _server.takeRequest();
