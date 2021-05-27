@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'api_client.dart';
 import 'entity.dart';
 
